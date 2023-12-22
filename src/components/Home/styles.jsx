@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 
 export const Section = styled.section`
-    height: calc(100vh - 3rem);
-   // row-gap: 1rem;
-
+    /* height: calc(100vh - 3rem);
+   // row-gap: 1rem; */
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    background-color:red;
+    margin-inline:1rem;
 `
 
 export const ContainerCard = styled.div`
@@ -27,6 +33,9 @@ export const ContainerCard = styled.div`
 
 export const SocialIcons = styled.div`
 display:flex;
+padding-top: 0;
+padding-bottom: 2.5rem;
+align-self: flex-end;
 gap: 20px;
 
 `
