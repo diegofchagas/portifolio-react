@@ -8,25 +8,24 @@ export const Header = styled.header`
   left: 0;
   z-index: ${({ theme }) => theme.sizes.zFixed};
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  height:4rem;
 
   .nav {
-    background-color: ${({ theme }) => theme.colors.containerColor};
+    margin: 0 144px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: ${({ theme }) => theme.sizes.fontSemi};
-    margin:0 144px;
-    height:4rem;
+    height:${({ theme }) => theme.sizes.headerHeight};
   }
 
-  /* .nav .bd-grid{
+  /* .bd-grid{
     max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
-    grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
     margin-inline: 2rem;
   } */
+
 
   .nav-list {
     display: flex;
@@ -58,6 +57,22 @@ export const Header = styled.header`
     background-color: ${({ theme }) => theme.colors.secondary};
   }
 
+  .nag-toggle{
+    color:${({ theme }) => theme.colors.primary};
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .active-link::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: ${({ theme }) => theme.colors.secondary};
+  }
+
   .navs-btns {
     display: flex;
     align-items: center;
@@ -69,7 +84,7 @@ export const Header = styled.header`
     cursor: pointer;
   }
 
-
+/* 
   @media (min-width:768px) {
     /* .nav {
       height: 4rem;
@@ -79,30 +94,18 @@ export const Header = styled.header`
     margin-left: ${({ theme }) => theme.sizes.mb6};
     margin-bottom:0;
   } */
-  }
+  
 
   @media (max-width: 768px) {
-    nav {
-      height: 4rem;
-    }
     .nav-menu {
       position: fixed;
       top: ${({ theme }) => theme.sizes.headerHeight};
-      right: -100%;
+      right:20%;
       width: 80%;
       height: 100%;
       padding: 2rem;
       background-color: ${({ theme }) => theme.colors.secondary};
-      transition: 0.5s;
-    }
-
-    .nav-list li {
-      margin-left: ${({ theme }) => theme.sizes.mb6};
-      margin-bottom: 0;
-    }
-
-    .nav-link {
-      color: ${({ theme }) => theme.colors.titleColor};
+      transition: .5s;
     }
   }
 `;
