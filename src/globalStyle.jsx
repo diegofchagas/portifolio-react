@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
   box-sizing:border-box;
 }
 
+*,::before,::after{
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
