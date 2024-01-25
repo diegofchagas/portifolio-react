@@ -1,13 +1,14 @@
 import bike from "../../assets/bikcraft.jpg"
 import todo from "../../assets/todo-list.png"
 import tweetLite from "../../assets/tweetLite.png"
+import  Heading  from "../Common/Title/index"
 
 import * as S from "./styles"
 
 const Works = () => {
   return (
     <S.Section>
-      <h2>Trabalhos</h2>
+     <Heading text="Trabalhos"/>
       <S.Projects>
         <div>
           <img src={bike} alt="" />

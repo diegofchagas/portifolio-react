@@ -17,7 +17,7 @@ html{
 }
 
 body{
-  margin:${({ theme }) => theme.sizes.headerHeight};
+  margin:${({ theme }) => theme.sizes.headerHeight} 0 0 0;
   font-family: ${({ theme }) => theme.sizes.bodyFont};
   font-size:${({ theme }) => theme.sizes.normalFontSize};
   color: ${({ theme }) => theme.colors.secondary};
