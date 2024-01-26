@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <S.Header> 
       {/* className = l-header */}
-      <nav className="nav bd-grid">
+      <nav className="nav">
         <div>
-          <a href="#">
+          <a className='name' href="#">
             <span>[</span>Diego<span>]</span>
           </a>
         </div>
@@ -48,13 +48,13 @@ const Header = () => {
           <List size={20}/>
         </div>
 
-        {/* <div className="navs-btns">
+         <div className="navs-btns">
           <Moon size={20} />
         </div>
 
         <div className="sun">
           <Sun size={32} />
-        </div> */}
+        </div> 
       </nav>
     </S.Header>
   );
