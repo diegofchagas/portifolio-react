@@ -11,18 +11,12 @@ export const Heading = styled.h2`
   &::after {
     position: absolute;
     content: "";
-    width: 4rem;
+    width: 4.5rem;
     height: 0.18rem;
     left: 0;
     right: 0;
     margin: auto;
-    top: 2rem;
+    top: 2.5rem;
     background-color: ${({ theme }) => theme.colors.primary};
   }
 `;
-
-
-// .section{
-//   padding-top:3rem;
-//   padding-bottom:2rem;
-// }
