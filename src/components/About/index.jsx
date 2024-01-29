@@ -1,28 +1,22 @@
-import foto from "../../assets/IMG_5384.jpg";
+import foto from "../../assets/foto2.jpg";
+import Title from "../Common/Title";
 import * as S from "./styles";
 
 const About = () => {
   return (
     <S.Section>
-      <h2>Sobre</h2>
-
-      <div>
-        <div>
+     <Title text="Sobre"/>
+      <S.AboutContainer>
+        <div className="about-img">
           <img src={foto} alt="Diego" />
         </div>
-
         <div>
-          <h2>Eu sou Diego Chagas</h2>
-
-          <p>
-            Desenvolvedor Full-Stack, estou graduando em Análise e
-            Desenvolvimento de Sistemas pela Unopar. No momento estou estudando
-            e desenvolvendo projetos web mais precisamente no Front-end, de modo
-            a ampliar meus conhecimentos e assim ter um crescimento contínuo
-            nessa área
+          <h2 className="subtitle">Eu sou Diego Chagas</h2>
+          <p className="about-description">
+          Sou um profissional apaixonado por tecnologia . Trabalho pouco mais de um ano como Desenvolvedor Full-Stack,meu trabalho inclui a integração de APIs com o lado do cliente, focando na disponibilidade e confiabilidade. Tenho experiência em tecnologias como Javascript/Typescript , Node.Js, React ,MongoDB. Possuo experiência prática na metodologia Scrum, facilitando a colaboração eficaz e entregas pontuais. Utilização proficientemente do Jira para gerenciamento ágil de projetos, garantindo transparência e eficiência na equipe. Estou aberto a aprender novas linguagens e tecnologias para acompanhar as tendências do mercado. Capacidade de adaptar-se rapidamente a ambientes dinâmicos e enfrentar desafios com uma mentalidade proativa.
           </p>
         </div>
-      </div>
+      </S.AboutContainer>
     </S.Section>
   );
 };
