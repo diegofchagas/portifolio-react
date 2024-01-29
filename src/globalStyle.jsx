@@ -22,6 +22,7 @@ body{
   font-size:${({ theme }) => theme.sizes.normalFontSize};
   color: ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.bodyColor};
+  font-family: "Inter", sans-serif;
 }
 
 main p{

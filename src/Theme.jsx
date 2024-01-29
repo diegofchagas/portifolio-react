@@ -15,7 +15,7 @@ export const theme = {
     fontSemi:'600',
     bodyFont: 'sans-serif',
     bigFontSize: '3.5rem',
-    h2FontSize:'1.25rem',
+    h2FontSize:'2rem',
     normalFontSize:'0.940rem',
     mb1: '0.5rem',
     mb2: '1rem',
