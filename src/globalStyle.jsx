@@ -20,11 +20,11 @@ html{
 
 body{
   margin:${({ theme }) => theme.sizes.headerHeight} 0 0 0;
-  font-family: ${({ theme }) => theme.sizes.bodyFont};
-  font-size:${({ theme }) => theme.sizes.normalFontSize};
-  color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => theme.colors.bodyColor};
   font-family: "Inter", sans-serif;
+  font-size:${({ theme }) => theme.sizes.normalFontSize};
+  color: ${({ theme }) => theme.colors.textColor};
+  background-color: ${({ theme }) => theme.colors.bodyColor};
+ 
 }
 
 main p{
