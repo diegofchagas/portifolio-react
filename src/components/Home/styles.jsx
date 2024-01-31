@@ -102,10 +102,10 @@ export const ContainerData = styled.div`
 
 @keyframes cursor {
     from {
-      border-right-color: var(--text-color);
+      border-right-color: ${({theme})=> theme.colors.textColor};
     }
     to {
-      border-right-color: var(--title-color);
+      border-right-color: ${({theme})=> theme.colors.titleColor};
     }
   }
   @keyframes line {
@@ -113,14 +113,14 @@ export const ContainerData = styled.div`
       width: 0;
     }
     to {
-      width: 12.5em;
+      width: 12.8em;
     }
   }
 
   .animation{
   animation: cursor 1s steps(40) infinite normal,
   line 5s steps(40) 1s normal both;
-  border-right: 3px solid hsl(224, 89%, 60%);
+  border-right: 3px solid;
   white-space: nowrap;
   overflow: hidden;
   }

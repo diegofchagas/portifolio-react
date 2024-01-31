@@ -20,13 +20,13 @@ const Home = () => {
 
         <S.SocialIcons>
           <a href="#" className="link-icon">
-            <LinkedinLogo size={32} />
+            <LinkedinLogo size="32" />
           </a>
           <a href="#" className="link-icon">
-            <InstagramLogo size={32} />
+            <InstagramLogo size="32" />
           </a>
           <a href="#" className="link-icon">
-            <GithubLogo size={32} />
+            <GithubLogo size="32" />
           </a>
         </S.SocialIcons>
 
