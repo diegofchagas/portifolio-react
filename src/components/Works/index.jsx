@@ -1,50 +1,58 @@
+import { GithubLogo, GoogleChromeLogo } from "@phosphor-icons/react";
 import bike from "../../assets/bikcraft.jpg"
 import todo from "../../assets/todo-list.png"
 import tweetLite from "../../assets/tweetLite.png"
-import  Heading  from "../Common/Title/index"
+import  Title  from "../Common/Title"
 
 import * as S from "./styles"
 
 const Works = () => {
   return (
     <S.Section>
-     <Heading text="Trabalhos"/>
+     <Title text="Trabalhos"/>
       <S.Projects>
-        <div>
-          <img src={bike} alt="" />
-          <p>Trabalho 1</p>
-          <a href="">github</a>
-          <a href="">website</a>
+        <div className="card-project">
+          <img src={bike} alt="logo-projeto" />
+          <a className="link" href="https://github.com/diegofchagas/bikcraft" target="blank">
+            <GithubLogo size="25"/>
+            
+          </a>
+          <a className="link" href="https://diegofchagas.github.io/bikcraft/" target="blank"> <GoogleChromeLogo size="25"/></a>
         </div>
-        <div>
-        <img src={todo} alt="" />
-          <p>Trabalho 1</p>
-          <a href="">github</a>
-          <a href="">website</a>
+        <div className="card-project">
+        <img src={todo} alt="logo-projeto" />
+        <a className="link" href="https://github.com/diegofchagas/todo-react/" target="blank">
+            <GithubLogo size="25"/>
+          </a>
+          <a className="link" href="https://todo-list-sand-pi.vercel.app/" target="blank"> <GoogleChromeLogo size="25"/></a>
         </div>
-        <div>
+        <div className="card-project">
         <img src={tweetLite} alt="" />
-          <p>Trabalho 1</p>
-          <a href="">github</a>
-          <a href="">website</a>
+        <a className="link" href="https://github.com/diegofchagas/bikcraft" target="blank">
+            <GithubLogo size="25"/>
+          </a>
+          <a className="link" href="https://diegofchagas.github.io/bikcraft/" target="blank"> <GoogleChromeLogo size="25"/></a>
         </div>
-        <div>
-        <img src={bike} alt="" />
-          <p>Trabalho 1</p>
-          <a href="">github</a>
-          <a href="">website</a>
+        <div className="card-project">
+        <img src={bike} alt=" logo-projeto" />
+        <a className="link" href="https://github.com/diegofchagas/bikcraft" target="blank">
+            <GithubLogo size="25"/>
+          </a>
+          <a className="link" href="https://diegofchagas.github.io/bikcraft/" target="blank"> <GoogleChromeLogo size="25"/></a>
         </div>
-        <div>
-        <img src={todo} alt="" />
-          <p>Trabalho 1</p>
-          <a href="">github</a>
-          <a href="">website</a>
+        <div className="card-project">
+        <img src={todo} alt=" logo-projeto" />
+        <a className="link" href="https://github.com/diegofchagas/bikcraft" target="blank">
+            <GithubLogo size="25"/>
+          </a>
+          <a className="link" href="https://diegofchagas.github.io/bikcraft/" target="blank"> <GoogleChromeLogo size="25"/></a>
         </div>
-        <div>
-        <img src={tweetLite} alt="" />
-          <p>Trabalho 1</p>
-          <a href="">github</a>
-          <a href="">website</a>
+        <div className="card-project">
+        <img src={tweetLite} alt=" logo-projeto" />
+        <a className="link" href="https://github.com/diegofchagas/bikcraft" target="blank">
+            <GithubLogo size="25"/>
+          </a>
+          <a className="link" href="https://diegofchagas.github.io/bikcraft/" target="blank"> <GoogleChromeLogo size="25"/></a>
         </div>
       </S.Projects>
 
