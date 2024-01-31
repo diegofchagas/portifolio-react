@@ -13,7 +13,6 @@ export const theme = {
   sizes:{
     headerHeight:'3rem',
     fontSemi:'600',
-    bodyFont: 'sans-serif',
     bigFontSize: '3.5rem',
     h2FontSize:'2rem',
     normalFontSize:'0.940rem',
