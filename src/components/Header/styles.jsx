@@ -55,12 +55,7 @@ export const Header = styled.header`
     background-color: ${({ theme }) => theme.colors.secondary};
   }
 
-  .nag-toggle{
-    color:${({ theme }) => theme.colors.primary};
-    font-size: 1.5rem;
-    cursor: pointer;
-    visibility:hidden;
-  }
+
 
   .active-link::after{
     position: absolute;
@@ -89,13 +84,18 @@ export const Header = styled.header`
     .nav-menu {
       position: fixed;
       top: ${({ theme }) => theme.sizes.headerHeight};
-      right:0;
+      right:-100%;
       width: 80%;
       height: 100%;
       padding: 2rem;
       background-color: ${({ theme }) => theme.colors.secondary};
       transition: .5s;
     }
+
+    .nav-menu.open {
+      right:0;
+    }
+    
     .nav-list{
     display: grid;
     gap: 1.5rem;
@@ -103,3 +103,14 @@ export const Header = styled.header`
   }
 
 `;
+
+export const ContentMobile = styled.div`
+  display:none;
+
+ @media (max-width:768px) {
+    color:${({ theme }) => theme.colors.primary};
+    font-size: 1.5rem;
+    cursor: pointer;
+    display:block;
+ }
+`

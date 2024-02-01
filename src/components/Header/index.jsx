@@ -1,19 +1,24 @@
-import { Moon, Sun } from "@phosphor-icons/react";
+import { Moon, Sun,List } from "@phosphor-icons/react";
 import * as S from "./styles";
-import { List } from "@phosphor-icons/react/dist/ssr";
+import { useState } from "react";
 
 const Header = () => {
+  const [menuMobile , setMenuMobile] = useState(false);
+
+  const toogleMenu = () =>{
+    setMenuMobile(!menuMobile)
+  }
+
   return (
-    <S.Header> 
-      {/* className = l-header */}
+    <S.Header>
       <nav className="nav">
         <div>
-          <a className='name' href="#">
+          <a className="name" href="#">
             <span>[</span>Diego<span>]</span>
           </a>
         </div>
 
-        <div className="nav-menu">
+        <div className={`nav-menu ${menuMobile ? 'open' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
               {" "}
@@ -44,17 +49,17 @@ const Header = () => {
           </ul>
         </div>
 
-        <div className="nag-toggle">
-          <List size={20}/>
-        </div>
+        <S.ContentMobile onClick={toogleMenu}>
+          <List size="20" weight="fill" />
+        </S.ContentMobile>
 
-         <div className="navs-btns">
-          <Moon size={20} />
+        <div className="navs-btns">
+          <Moon size="20" />
         </div>
 
         <div className="sun">
-          <Sun size={32} />
-        </div> 
+          <Sun size="20" />
+        </div>
       </nav>
     </S.Header>
   );
