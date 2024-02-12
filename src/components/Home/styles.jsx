@@ -32,7 +32,7 @@ export const Main = styled.main`
   }
 
 
-  @media (max-width: 320px) {
+  @media (max-width: 365px) {
     section{
     row-gap: 2rem;
     }
@@ -113,7 +113,7 @@ export const ContainerData = styled.div`
       width: 0;
     }
     to {
-      width: 12.8em;
+      width: 12.5em;
     }
   }
 
@@ -132,6 +132,12 @@ export const ContainerData = styled.div`
     padding: .75rem 2.5rem;
     font-weight: ${({theme})=> theme.sizes.fontSemi};
     border-radius: .5rem;
+}
+
+@media (max-width: 500px) {
+  .home-title, .animation{
+  font-size:${({theme})=> theme.sizes.h2FontSize};
+}
 }
 
 @media (min-width: 768px){
