@@ -12,20 +12,20 @@ const Home = () => {
             <br />
             Eu sou <span>Diego Chagas</span> <br />
           </h1>
-          <h3 className="animation">Desenvolvedor Full-Stack</h3>
+          <h3 className="animation">Desenvolvedor FullStack</h3>
           <a href="#" className="button-contact">
             Contato
           </a>
         </S.ContainerData>
 
         <S.SocialIcons>
-          <a href="#" className="link-icon">
+          <a href="https://www.linkedin.com/in/diego-fernandes-chagas/" target="_blank" rel="noreferrer" className="link-icon" >
             <LinkedinLogo size="32" />
           </a>
-          <a href="#" className="link-icon">
+          <a href="https://www.instagram.com/diegochagas.dev/" target="_blank" rel="noreferrer" className="link-icon">
             <InstagramLogo size="32" />
           </a>
-          <a href="#" className="link-icon">
+          <a href="https://github.com/diegofchagas" target="_blank" rel="noreferrer" className="link-icon">
             <GithubLogo size="32" />
           </a>
         </S.SocialIcons>
