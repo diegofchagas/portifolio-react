@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { LinkedinLogo, InstagramLogo, GithubLogo } from "@phosphor-icons/react";
 import eu from "../../assets/eu.png";
 import * as S from "./styles";
@@ -13,9 +14,9 @@ const Home = () => {
             Eu sou <span>Diego Chagas</span> <br />
           </h1>
           <h3 className="animation">Desenvolvedor FullStack</h3>
-          <a href="#" className="button-contact">
+          <Link to="Contact" className="button-contact">
             Contato
-          </a>
+          </Link >
         </S.ContainerData>
 
         <S.SocialIcons>

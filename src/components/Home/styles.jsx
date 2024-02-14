@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 
 export const Main = styled.main`
@@ -78,8 +78,32 @@ export const Main = styled.main`
   @media (min-width: 1024px){
     margin-inline:22rem;
   }
+`
 
+export const Cursor = keyframes`
+ from {
+      border-right-color: hsl(224, 8%, 15%);
+    }
+    to {
+      border-right-color: hsl(224, 89%, 60%);
+    }
+`
+export const Line = keyframes`
+ from {
+      width: 0;
+    }
+    to {
+      width: 12.5em;
+    }
+`
 
+export const Pulse = keyframes`
+ 0% {
+      transform: scale(1);
+    }
+ 100% {
+      transform: scale(1.10);
+    }
 `
 
 export const ContainerData = styled.div`
@@ -100,26 +124,8 @@ export const ContainerData = styled.div`
   margin-bottom:1.5rem;
 }
 
-@keyframes cursor {
-    from {
-      border-right-color: ${({theme})=> theme.colors.textColor};
-    }
-    to {
-      border-right-color: ${({theme})=> theme.colors.titleColor};
-    }
-  }
-  @keyframes line {
-    from {
-      width: 0;
-    }
-    to {
-      width: 12.5em;
-    }
-  }
-
   .animation{
-  animation: cursor 1s steps(40) infinite normal,
-  line 5s steps(40) 1s normal both;
+  animation: ${Cursor} 1s steps(40) infinite normal, ${Line} 5s steps(40) 1s normal both;
   border-right: 3px solid;
   white-space: nowrap;
   overflow: hidden;
@@ -132,6 +138,12 @@ export const ContainerData = styled.div`
     padding: .75rem 2.5rem;
     font-weight: ${({theme})=> theme.sizes.fontSemi};
     border-radius: .5rem;
+    cursor: pointer;
+}
+
+.button-contact:hover{
+  animation: ${Pulse} 0.7s ease-in-out infinite alternate;
+  box-shadow: 0 15px 36px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 500px) {
