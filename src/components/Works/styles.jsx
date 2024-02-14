@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Section = styled.section`
   padding-top: 3rem;
@@ -34,6 +34,15 @@ export const Projects = styled.div`
   }
 `;
 
+export const Pulse = keyframes`
+ 0% {
+      transform: scale(1);
+    }
+ 100% {
+      transform: scale(1.05);
+    }
+`;
+
 export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
@@ -45,11 +54,22 @@ export const LinkContainer = styled.div`
     align-items: center;
     gap: 2px;
     margin: 12px 0px;
-
+    font-family: "Inter", sans-serif;
     background-color: ${({ theme }) => theme.colors.primary};
-    color: #fff;
     padding: 0.65rem 2.1rem;
     border-radius: 0.5rem;
+    color: #fff;
+    transition: all 1s;
+  }
+
+  .link:hover {
+    animation: ${Pulse} 0.7s ease-in-out infinite alternate;
+    font-weight: 500;
+    background-color: hsl(
+      205.87677725118482,
+      84.0637450199203%,
+      50.78431372549019%
+    );
   }
 `;
 
