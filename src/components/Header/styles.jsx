@@ -118,3 +118,7 @@ export const ContentMobile = styled.div`
     display:block;
  }
 `
+
+export const ThemeChange = styled.div`
+  visibility:hidden;
+`
