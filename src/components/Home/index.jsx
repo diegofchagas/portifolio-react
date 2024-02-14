@@ -31,9 +31,9 @@ const Home = () => {
           </a>
         </S.SocialIcons>
 
-        <div className="home-img">
+        <S.CardImage className="home-img">
           <img src={eu} alt="Diego" />
-        </div>
+        </S.CardImage >
       </section>
     </S.Main>
   );
