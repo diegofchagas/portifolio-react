@@ -10,6 +10,7 @@ export const Header = styled.header`
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
   height:4rem;
 
+
 .name{
   color:${({ theme }) => theme.colors.titleColor};
   font-size:1rem;
@@ -18,20 +19,22 @@ export const Header = styled.header`
   .nav {
     margin: 0 144px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     font-weight: ${({ theme }) => theme.sizes.fontSemi};
     height:${({ theme }) => theme.sizes.headerHeight};
+    /* gap:4rem; */
   }
+
+
 
   .nav-list{
     display: flex;
-    margin-inline: 1rem;
+    margin-inline:1rem;
   }
 
 
   .nav-list li {
-    /* margin-bottom: ${({ theme }) => theme.sizes.mb4}; */
     margin-left: ${({ theme }) => theme.sizes.mb6};
     margin-bottom:0;
   }
@@ -39,6 +42,7 @@ export const Header = styled.header`
   .nav-link {
     position: relative;
     color: ${({ theme }) => theme.colors.titleColor};
+    cursor: pointer;
   }
 
   .nav-link:hover{

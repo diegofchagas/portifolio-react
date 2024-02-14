@@ -3,7 +3,7 @@ import * as S from "./styles"
 
 const Contact = () => {
   return (
-    <S.Section>
+    <S.Section id="Contact">
       <Title text="Contato"/>
       <S.Container>
         <form className="teste">

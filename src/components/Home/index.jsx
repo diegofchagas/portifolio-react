@@ -4,7 +4,7 @@ import * as S from "./styles";
 
 const Home = () => {
   return (
-    <S.Main>
+    <S.Main id="Home">
       <section>
         <S.ContainerData>
           <h1 className="home-title">

@@ -1,50 +1,49 @@
-import { Moon, Sun,List } from "@phosphor-icons/react";
-import * as S from "./styles";
 import { useState } from "react";
+import { Moon, Sun, List } from "@phosphor-icons/react";
+import {Link} from "react-scroll"
+import * as S from "./styles";
+
 
 const Header = () => {
-  const [menuMobile , setMenuMobile] = useState(false);
+  const [menuMobile, setMenuMobile] = useState(false);
 
-  const toogleMenu = () =>{
-    setMenuMobile(!menuMobile)
-  }
+  const toogleMenu = () => {
+    setMenuMobile(!menuMobile);
+  };
 
   return (
     <S.Header>
       <nav className="nav">
-        <div>
-          <a className="name" href="#">
+          <p className="name" href="#">
             <span>[</span>Diego<span>]</span>
-          </a>
-        </div>
-
-        <div className={`nav-menu ${menuMobile ? 'open' : ''}`}>
+          </p>
+        <div className={`nav-menu ${menuMobile ? "open" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item">
               {" "}
-              <a className="nav-link active-link" href="#home">
+              <Link className="nav-link active-link" to="Home" spy={true} smooth={true} offset={-70} duration={200}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" href="#about">
+              <Link className="nav-link" to="About" py={true} smooth={true} offset={-70} duration={200}>
                 Sobre
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" href="#skills">
+              <Link className="nav-link" to="Skills" py={true} smooth={true} offset={-70} duration={200}>
                 Habilidades
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" href="#work">
+              <Link className="nav-link" to="Work" py={true} smooth={true} offset={-70} duration={200}>
                 Projetos
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" href="#contact">
+              <Link className="nav-link" to="Contact" py={true} smooth={true} offset={-70} duration={100}>
                 Contato
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

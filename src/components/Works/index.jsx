@@ -8,7 +8,7 @@ import * as S from "./styles"
 
 const Works = () => {
   return (
-    <S.Section>
+    <S.Section id="Work">
      <Title text="Trabalhos"/>
       <S.Projects>
         <div className="card-project">

@@ -13,7 +13,7 @@ import * as S from "./styles";
 
 const Skills = () => {
   return (
-    <S.Section>
+    <S.Section id="Skills">
       <Title text="Habilidades" />
       <S.SkillsContainer>
         <div>

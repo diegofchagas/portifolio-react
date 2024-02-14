@@ -7,7 +7,7 @@ const About = () => {
     <S.Section>
      <Title text="Sobre"/>
       <S.AboutContainer>
-        <div className="about-img">
+        <div className="about-img" id="About">
           <img src={foto} alt="Diego" />
         </div>
         <div>
