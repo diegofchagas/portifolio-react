@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const Section = styled.section`
   padding-top: 3rem;
@@ -9,6 +9,15 @@ export const Section = styled.section`
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
+`;
+
+export const Pulse = keyframes`
+ 0% {
+      transform: scale(1);
+    }
+ 100% {
+      transform: scale(1.10);
+    }
 `;
 
 export const Container = styled.div`
@@ -70,6 +79,11 @@ export const Container = styled.div`
     font-weight: ${({ theme }) => theme.sizes.fontSemi};
     margin-left: auto;
     cursor: pointer; 
+  }
+
+  button:hover{
+    animation: ${Pulse} 0.7s ease-in-out infinite alternate;
+    box-shadow: 0 15px 36px rgba(0, 0, 0, 0.5);  
   }
 
   @media (min-width: 768px) {

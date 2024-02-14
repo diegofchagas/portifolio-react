@@ -73,7 +73,6 @@ export const Float = keyframes`
   100%{
     transform: translateY(0px);
   }
-
 `
 
 export const ContainerData = styled.div`
