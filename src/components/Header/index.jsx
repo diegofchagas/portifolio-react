@@ -5,10 +5,15 @@ import * as S from "./styles";
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = useState(false);
+  const [activeSection, setActiveSection]= useState("")
 
   const toogleMenu = () => {
     setMenuMobile(!menuMobile);
   };
+
+  const handleSetActive = (to)=>{
+    setActiveSection(to)
+  }
 
   return (
     <S.Header>
@@ -21,60 +26,66 @@ const Header = () => {
             <li className="nav-item">
               {" "}
               <Link
-                className="nav-link active-link"
+                className={`nav-link ${activeSection === "Home" ? "active-link" : ""}`}
                 to="Home"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
+                onSetActive={handleSetActive}
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                className="nav-link"
+                className={`nav-link ${activeSection === "About" ? "active-link" : ""}`}
+                activeClass="active"
                 to="About"
-                py={true}
+                spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
+                onSetActive={handleSetActive}
               >
                 Sobre
               </Link>
             </li>
             <li>
               <Link
-                className="nav-link"
+                className={`nav-link ${activeSection === "Skills" ? "active-link" : ""}`}
                 to="Skills"
-                py={true}
+                spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
+                onSetActive={handleSetActive}
               >
                 Habilidades
               </Link>
             </li>
             <li>
               <Link
-                className="nav-link"
+                className={`nav-link ${activeSection === "Work" ? "active-link" : ""}`}
                 to="Work"
-                py={true}
+                spy={true}
                 smooth={true}
                 offset={-70}
                 duration={200}
+                onSetActive={handleSetActive}
               >
                 Projetos
               </Link>
             </li>
             <li>
               <Link
-                className="nav-link"
+                className={`nav-link ${activeSection === "Contact" ? "active-link" : ""}`}
                 to="Contact"
-                py={true}
+                spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-200}
                 duration={100}
+                onSetActive={handleSetActive}
               >
                 Contato
               </Link>

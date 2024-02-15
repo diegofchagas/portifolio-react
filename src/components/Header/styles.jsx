@@ -59,7 +59,9 @@ export const Header = styled.header`
     background-color: ${({ theme }) => theme.colors.secondary};
   }
 
-
+.active-link{
+  color:${({ theme }) => theme.colors.secondary};
+}
 
   .active-link::after{
     position: absolute;

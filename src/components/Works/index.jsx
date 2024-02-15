@@ -1,8 +1,12 @@
 import { GithubLogo, GoogleChromeLogo } from "@phosphor-icons/react";
+
 import bike from "../../assets/bikcraft.jpg";
 import todo from "../../assets/todo-list.png";
 import tweetLite from "../../assets/tweetLite.png";
+import timer from "../../assets/timer.png";
+
 import Title from "../Common/Title";
+
 
 import * as S from "./styles";
 
@@ -78,11 +82,11 @@ const Works = () => {
         </S.CardProjects>
 
         <S.CardProjects>
-          <img src={bike} alt=" logo-projeto" />
+          <img src={timer} alt=" logo-projeto" />
           <S.LinkContainer>
             <a
               className="link"
-              href="https://github.com/diegofchagas/bikcraft"
+              href="https://github.com/diegofchagas/timer"
               target="blank"
             >
               <GithubLogo size="25" />
