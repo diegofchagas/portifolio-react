@@ -28,6 +28,12 @@ export const Container = styled.div`
   width: calc(100% - 2rem);
   margin-inline: 1rem;
 
+  form{
+    display:flex;
+    flex-direction:column;
+    gap:2rem; 
+  }
+
   input {
     background-color:#FFF;
     font-family: "Inter", sans-serif;
@@ -37,8 +43,15 @@ export const Container = styled.div`
     padding: 1rem;
     border-radius: 0.5rem;
     outline: none;
-    margin-bottom: 2rem;
     border:1px solid hsl(202, 30%, 20%);
+  }
+
+  span{
+    margin-top: -1.8rem;
+    text-align:left;
+    color:red;
+    font-weight:500;
+    font-size:.800rem;
   }
 
   input:focus{
@@ -56,7 +69,6 @@ export const Container = styled.div`
     resize:none;
     height:8rem;
     font-family: "Inter", sans-serif;
-    margin-bottom: 2rem;
     line-height: 140%;
     border:none;
     border:1px solid hsl(202, 30%, 20%);
@@ -81,7 +93,12 @@ export const Container = styled.div`
     cursor: pointer; 
   }
 
-  button:hover{
+  button:disabled{
+  background-color:${({ theme }) => theme.colors.secondary};
+  cursor: not-allowed;
+  }
+
+  button:not(:disabled):hover{
     animation: ${Pulse} 0.7s ease-in-out infinite alternate;
     box-shadow: 0 15px 36px rgba(0, 0, 0, 0.5);  
   }
