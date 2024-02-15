@@ -17,7 +17,7 @@ export const Footer = styled.footer`
   >svg{
     position:fixed;
     right:1rem;
-    bottom:80%;
+    bottom:-20%;
     background-color:#4070F4;
     opacity: .8;
     padding: 0 .3rem;
@@ -30,6 +30,10 @@ export const Footer = styled.footer`
 
   >svg:hover{
     background-color:${({theme})=> theme.colors.secondary};
+  }
+
+  .show-scroll{
+    bottom: 5rem; 
   }
 `;
 
