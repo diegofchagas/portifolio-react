@@ -4,6 +4,8 @@ import bike from "../../assets/bikcraft.jpg";
 import todo from "../../assets/todo-list.png";
 import tweetLite from "../../assets/tweetLite.png";
 import timer from "../../assets/timer.png";
+import controllerMoney from "../../assets/controller-money.png"
+import coffeeDelivery from "../../assets/coffee-delivery.jpg"
 
 import Title from "../Common/Title";
 
@@ -64,7 +66,7 @@ const Works = () => {
           <S.LinkContainer>
             <a
               className="link"
-              href="https://github.com/diegofchagas/bikcraft"
+              href="https://github.com/diegofchagas/tweetLite"
               target="blank"
             >
               <GithubLogo size="25" />
@@ -72,7 +74,7 @@ const Works = () => {
             </a>
             <a
               className="link"
-              href="https://diegofchagas.github.io/bikcraft/"
+              href="https://tweet-lite-eta.vercel.app/#"
               target="blank"
             >
               <GoogleChromeLogo size="25" />
@@ -94,7 +96,7 @@ const Works = () => {
             </a>
             <a
               className="link"
-              href="https://diegofchagas.github.io/bikcraft/"
+              href="https://timer-management.vercel.app/"
               target="blank"
             >
               <GoogleChromeLogo size="25" />
@@ -104,11 +106,11 @@ const Works = () => {
         </S.CardProjects>
 
         <S.CardProjects>
-          <img src={todo} alt=" logo-projeto" />
+          <img src={controllerMoney} alt=" logo-projeto" />
           <S.LinkContainer>
             <a
               className="link"
-              href="https://github.com/diegofchagas/bikcraft"
+              href="https://github.com/diegofchagas/controller-money-web"
               target="blank"
             >
               <GithubLogo size="25" />
@@ -116,7 +118,7 @@ const Works = () => {
             </a>
             <a
               className="link"
-              href="https://diegofchagas.github.io/bikcraft/"
+              href="https://controller-money-do9whymsy-diegofchagas.vercel.app/"
               target="blank"
             >
               <GoogleChromeLogo size="25" />
@@ -126,11 +128,11 @@ const Works = () => {
         </S.CardProjects>
 
         <S.CardProjects>
-          <img src={tweetLite} alt=" logo-projeto" />
+          <img src={coffeeDelivery} alt=" logo-projeto" />
           <S.LinkContainer>
             <a
               className="link"
-              href="https://github.com/diegofchagas/bikcraft"
+              href="https://github.com/diegofchagas/coffe-delivery"
               target="blank"
             >
               <GithubLogo size="25" />
@@ -138,7 +140,7 @@ const Works = () => {
             </a>
             <a
               className="link"
-              href="https://diegofchagas.github.io/bikcraft/"
+              href="https://coffe-delivery-7jel.vercel.app/"
               target="blank"
             >
               <GoogleChromeLogo size="25" />
